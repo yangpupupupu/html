@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登陆注册界面</title>
+</head>
+<body>
+
+<p>这是主界面，有账号请点击登录，无账号请点击注册</p>
+<button onclick="myFunction2()">登录</button>
+<button onclick="myFunction1()">注册</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="myModalLabel">注册界面</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label for="txt_departmentname">昵称</label>
+                        <input type="text" name="txt_departmentname" class="form-control" id="txt_departmentname" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_parentdepartment">设置密码</label>
+                        <input type="text" name="txt_parentdepartment" class="form-control" id="txt_parentdepartment" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_departmentlevel">确认密码</label>
+                        <input type="text" name="txt_departmentlevel" class="form-control" id="txt_departmentlevel" placeholder="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
+                    <button type="button" id="btn_submit" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script>
+function myFunction1(){
+	var x;
+	var person=prompt("姓名","");
+	var y;
+	var password=prompt("设置密码","");
+	var z;
+	var z=prompt("确定密码","");
+}
+</script>
+<script>
+function myFunction2(){
+	var x;
+	var person=prompt("姓名","");
+	var y;
+	var password=prompt("密码","");
+}
+</script>
+
+</body>
+</html>
