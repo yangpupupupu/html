@@ -1,0 +1,32 @@
+<div class="zhuce_body">
+    <div class="zhuce_kong">
+     <div class="zc">
+         <div class="bj_bai">
+            <h3>欢迎注册超级大饼店会员</h3>
+             <form action="${pageContext.request.contextPath}/UserRegisterServlet?op=register" method="post">
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label for="txt_departmentname">用户名称</label>
+                        <input type="text" name="txt_departmentname" class="form-control" id="txt_departmentname" placeholder="不能为空">
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_parentdepartment">设置密码</label>
+                        <input type="text" name="txt_parentdepartment" class="form-control" id="txt_parentdepartment" placeholder="不少于六位">
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_departmentlevel">确认密码</label>
+                        <input type="text" name="txt_departmentlevel" class="form-control" id="txt_departmentlevel" placeholder="必须与上面密码相同">
+                    </div>
+                </div>
+                <input name="提交" type="submit" class="btn_zhuce" value="提交">
+                
+                </form>
+            </div>
+         <div class="bj_right">
+                <p>已有账号？<a href="userLogin.jsp">立即登录</a></p >
+            
+            </div>
+        </div>
+    </div>
+</div>
