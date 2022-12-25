@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册进入大世界</title>
+    <script type="text/javascript" src="js/regist.js"></script>
+</head>
+<body>
+<div class="reg_back">
+    <div class="reg_left">
+    </div>
+
+      <div class="reg_center">
+        <div class="reg_form">
+            <form action="#" method="post" id="form">
+                <table>
+                    <tr>
+                        <td class="td_left"><label for="rename">姓名</label></td>
+                        <td class="td_right"><input type="text" name="rename" placeholder="请输入真实姓名" id="rename">
+                    
+                            <span id="s_rename" class="error"></span>
+                        </td>
+                    
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label for="password">设置密码</label></td>
+                        <td class="td_right"><input type="password" name="password" placeholder="请输入密码(请设置6-12位字符)"
+                                                    id="password">
+                            <span id="s_password" class="error"></span>
+                        </td>
+
+                    </tr>
+					
+                    <tr>
+                        <td class="td_left"><label>性别</label></td>
+                        <td class="td_right"><input type="radio" name="gender" value="male" checked> 男
+                            <input type="radio" name="gender" value="female"> 女
+                        </td>
+
+
+                    </tr>
+					
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label>血型</label></td>
+                        <td class="td_right">
+							<input type="radio" name="blood type" value="O" checked> O
+							<input type="radio" name="blood type" value="A"> A
+							<input type="radio" name="blood type" value="B"> B
+							<input type="radio" name="blood type" value="AB"> AB
+                        </td>
+						
+    <tr>
+                        <td class="td_left"><label>性格</label></td>
+                        <td class="td_right"><input type="checkbox" name="nature" value=" " checked> 热情大方
+                            <input type="checkbox" name="nature" value=" "> 温柔体贴
+							<input type="checkbox" name="nature" value=" "> 多情善感
+							
+                        </td>
+						
+                    </tr>
+					
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label for="file">文件</label></td>
+                        <td class="td_right"><input type="file" name="file" 
+                            <span id="s_file" class="error"></span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label for="text">简介</label></td>
+                        <td class="td_right"><input type="text" name="简介" id="简介"></td>
+                    </tr>
+					
+	<option>城市</option><select id="pro" name="pro">
+    	<option>-请选择-</option>
+        <option>北京市</option>
+        <option>上海市</option>
+        <option>天津市</option>
+        <option>重庆市</option>
+        <option>河北省</option>
+        <option>山西省</option>
+        <option>内蒙古自治区</option>
+        <option>辽宁省</option>
+        <option>吉林省</option>
+        <option>黑龙江省</option>
+        <option>江苏省</option>
+        <option>浙江省</option>
+        <option>安徽省</option>
+        <option>福建省</option>
+        <option>江西省</option>
+        <option>山东省</option>
+        <option>河南省</option>
+        <option>湖北省</option>
+        <option>湖南省</option>
+        <option>广东省</option>
+        <option>广西壮族自治区</option>
+        <option>海南省</option>
+        <option>四川省</option>
+        <option>贵州省</option>
+        <option>云南省</option>
+        <option>西藏自治区</option>
+        <option>陕西省</option>
+        <option>甘肃省</option>
+        <option>宁夏回族自治区</option>
+        <option>青海省</option>
+        <option>新疆维吾尔族自治区</option>
+        <option>香港特别行政区</option>
+        <option>澳门特别行政区</option>
+        <option>台湾省</option>
+        <option>其它</option>
+</select>
+</tr>
+                </table>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="button" value="提交" id="btn_sub" onclick="submitForm()">提交</button>
+                    </td>
+
+                    <td colspan="2" align="center">
+                        <button id="reset" value="重置" >重置</button>
+                    </td>
+                </tr>
+            </form>
+        </div>
+    </div>
+
+</div>  
+<script type="text/javascript" src="js/regist.js"></script>
+<style>
+
+div{
+	margin: 0;
+ width: 100%;
+     background: url('https://s1.aigei.com/src/img/jpg/d0/d0c7ca13f6b94368ade814aca0d56352.jpg?imageView2/2/w/990/%7Cwatermark/3/text/54ix57uZ572R57Sg5p2Q57yW5Y-3IzM4OTk4MzY4/font/5b6u6L2v6ZuF6buR/fontsize/282/fill/cmVk/dissolve/32/gravity/SouthEast/dx/11/dy/11/text/6IOM5pmv/font/5b6u6L2v6ZuF6buR/fontsize/282/fill/cmVk/dissolve/32/gravity/NorthWest/dx/11/dy/11/text/MjAwMMOXMTAxNg==/font/5b6u6L2v6ZuF6buR/fontsize/282/fill/cmVk/dissolve/32/gravity/SouthWest/dx/11/dy/11/text/5ZSv576O6aOO5pmv5Zu-/font/5b6u6L2v6ZuF6buR/fontsize/282/fill/cmVk/dissolve/32/gravity/NorthEast/dx/11/dy/11//text/54ix57uZ572RIGFpZ2VpLmNvbQ==/font/5b6u6L2v6ZuF6buR/fontsize/300/fill/QmxhY2s=/dissolve/51/gravity/NorthWest/dx/361/dy/155/text/54ix57uZ572RIGFpZ2VpLmNvbQ==/font/5b6u6L2v6ZuF6buR/fontsize/300/fill/UmVk/dissolve/51/gravity/NorthWest/dx/361/dy/406&e=1671782400&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:iO2ghn7mQOiPkd5_mSB0XRo6c-c=');
+	  background-repeat: no-repeat;
+	     background-size: 100% 100%;
+	     -moz-background-size: 100% 100%
+}
+
+</style>
+</body>
+</html>
