@@ -1,33 +1,48 @@
+
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script>
-        function openWin() {
-            myWindow = window.open('', '', 'width=350,height=350');
-            myWindow.document.write('<form><h2>游客！你好</h2><p>昵称：</p ><input type="text" value=""></br><p>密码：</p ><input type="password" value=""></br><input type="submit"  value="登录"> ');
-            myWindow.focus();
-            myWindow.document.body.style.backgroundColor = 'green'
-
-        }
-
-        function openwin() {
-            myWindow = window.open('', '', 'width=350,height=350', );
-            myWindow.document.write('<form><p>昵称：</p ><input type="text" value=""></br><p>密码：</p ><input type="password" value=""></br><input type="submit" value="注册"> ');
-            myWindow.focus();
-            myWindow.document.body.style.backgroundColor = 'red'
-        }
-    </script>
+	<meta charset="utf-8">
+	<title>GitHub &amp; BitBucket HTML Preview</title>
+	<style>
+	body {
+		font: 20px 'Helvetica Neue', Helvetica, Arial, freesans, clean, sans-serif;
+		color: #aaff00;
+	}
+	h1 {
+		font-size: 25px;
+	}
+	a {
+		color: #ffaaff;
+	}
+	#previewform {
+		display: none;
+		padding: 25px; 
+		text-align: center;
+	}
+	strong {
+		color: #00ff7f;
+		background-color: #ff9c6a;
+		padding: 0.1em;
+	}
+	#footer {
+		margin: 30px 0;
+		font-size: 15px;
+		color: #aaaaff;
+	}
+	</style>
 </head>
-
 <body>
-
-    <input type="button" value="登录" onclick="openWin()" />
-    <input type="button" value="注册" onclick="openwin()" />
-    <p>这是主页</p >
-
+	<form id="previewform" onsubmit="location.href='/?'+this.file.value;return false">
+		<h1>GitHub &amp; BitBucket HTML Preview</h1>
+		<p>
+			Enter URL of the HTML file to preview:
+			<input type="url" id="file" value="" placeholder="e.g. https://github.com/user/repo/blob/master/index.html" size="60" autofocus>
+			<input type="submit" value="Preview">
+		</p>
+		<p>or prepend to the URL: <code><strong>http://htmlpreview.github.io/?</strong>https://github.com/twbs/bootstrap/blob/gh-pages/2.3.2/index.html</code></p>
+		<p id="footer">Developed by <a href="https://github.com/niutech">niu tech</a> | Contribute on <a href="https://github.com/htmlpreview/htmlpreview.github.com">GitHub</a></p>
+	</form>
+	<script src="/htmlpreview.js"></script>
 </body>
-
 </html>
